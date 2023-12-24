@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block titleblock %} SignUP {% endblock titleblock %}
+
+{% block bodyblock %}
+
+<div class="container">
+    <!-- <form action="" method="post">
+        {{ form.as_p }}    
+        {%csrf_token %}
+        <button type="submit">SignUP</button>
+    </form> -->
+
+    <form method="post">
+    
+        <table>
+
+        {{ form.as_table }}
+        </table>
+
+        {%csrf_token %}
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+{% endblock bodyblock%}
